@@ -1,0 +1,53 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}/build"
+    },
+    "tasks": [
+        {
+            "label": "cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-G",
+                "Unix Makefiles",
+                "-DCMAKE_BUILD_TYPE=Debug",
+                ".."
+            ]
+        },
+        {
+            "label": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "type": "shell",
+            "command": "make",
+            "args": []
+        },
+        {
+           // "taskName": "echo",
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args":[
+                "-g", "${file}","-o","${fileBasenameNoExtension}.o",
+                //-------------------------------
+                //以下需要根据自己电脑opencv路径配置
+                "-I","/usr/local/include",
+                "-I","/usr/local/include/opencv4",
+                "-L","/usr/local/lib",
+                //--------------------------
+                "-l","opencv_core",
+                "-l","opencv_highgui",
+                "-l","opencv_imgproc",
+                "-l","opencv_imgcodecs",
+                "-l","opencv_video",
+                "-l","opencv_videoio"
+            ],
+
+        }
+    ]
+}

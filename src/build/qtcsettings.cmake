@@ -1,0 +1,7 @@
+# This file is managed by Qt Creator, do not edit!
+
+set("CMAKE_BUILD_TYPE" "Build" CACHE "STRING" "" FORCE)
+set("CMAKE_CXX_COMPILER" "" CACHE "STRING" "" FORCE)
+set("CMAKE_C_COMPILER" "" CACHE "STRING" "" FORCE)
+set("CMAKE_PREFIX_PATH" "" CACHE "STRING" "" FORCE)
+set("QT_QMAKE_EXECUTABLE" "" CACHE "STRING" "" FORCE)

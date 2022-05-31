@@ -1,0 +1,28 @@
+{
+    "baiduAPI":
+    {
+        "app_id":"25445250",
+        "api_key" : "1y1TkbKtV489MF3cc4eXNG3N",
+        "secret_key" : "CqlAt2OUHaUSI6X5nxag7gjAGv2FGiN2",
+        "group_id_list" : "1",
+        "image_type" : "BASE64"
+    },
+    "mysql":
+    {
+    	"HostIp":"127.0.0.1",
+    	"HostPort":3306,
+    	"DataBaseName":"face_detect",
+    	"UserName":"root",
+    	"PassWord":"991214",
+    	"DBPoolName":"wzx",
+    	"DBPoolMaxNum":4
+    },
+    "arcsoft":
+    {
+        "AppID" : "4WFXZc6bugpCibtxvTacNWB3ssNxb4VpVxNk9TAfAxfU",
+        "SDKKey": "4LNRpg1oXgw6dECDFkYN9CNgnfvdBPXdG9hEZNBNiVcG",
+        "NScale" :16 ,
+        "FaceNum":5
+    }
+}
+
